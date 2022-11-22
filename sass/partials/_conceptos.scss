@@ -1,22 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Source Sans Pro', sans-serif    
 }
 
-
-html{
-    min-width: 100vw;
-}
-body{
-    background-color: rgb(255, 255, 255);
-}
-section{
-    font-family:'Source Sans Pro', sans-serif
-}
-
+// HEADER
 .site_header{
     background-color: #000000;
     width: auto;
+    overflow-x: hidden;
 
     .logo_header {
         display: flex;
@@ -24,11 +16,8 @@ section{
     }
     .item_header{
         color: white;
-    }
-    .item_header{
-        margin-right: 5px;
-        font-size: 120%;
-        font-family:'Source Sans Pro', sans-serif
+        margin-right: 20px;
+        font-size: 140%;
     }
     .menu_header .option_header:hover .item_header{
         background-color: rgba(12, 206, 5, 0.904);
@@ -38,7 +27,7 @@ section{
     .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
-    } 
+    }
 }
 
 /* CARD-MAIN */
@@ -102,32 +91,42 @@ section{
     margin-top: 25px;
 }
 
+
 // FOOTER
-.site_footer{
-    background-color: black;
-    width: auto;
-}
-.logo_footer{
-    display: flex;
-    height: 80%;
-}
-.item_footer{
-    color: white;
-}
-.item_footer{
-    margin-right: 5px;
-    font-size: 120%;
-    font-family:'Source Sans Pro', sans-serif
-}
-.menu_footer .option_footer:hover .item_footer{
-    background-color: rgba(12, 206, 5, 0.904);
-    border-radius: 5px;
-    color: black;
-}
 
 .footer_site{
-    background-color: black;
-}
-.redes_footer{
-    margin-right: 10px;
+    background-color: #000000;
+    overflow-x: hidden;
+    .site_footer{
+        display: flex;
+        background-color: black;
+        width: auto;
+        .logo_footer{
+            display: flex;
+            height: 80%;
+        }
+        .menu_footerr{
+            margin-right: 20px;
+        }
+            .option_footer{
+                .item_footer{
+                color: white;
+                margin-right: 5px;
+                font-size: 140%;
+                text-decoration: none;
+                }
+            }
+    }
+    .menu_footer .option_footer:hover .item_footer{
+        background-color: rgba(12, 206, 5, 0.904);
+        border-radius: 5px;
+        color: black;
+        }
+        .redes_footer{
+            margin-right: 20px;
+        }
+        .navbar-toggler{
+            background-color: rgb(2 90 2);
+            border-color: rgb(2 90 2);
+        }
 }
