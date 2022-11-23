@@ -29,6 +29,8 @@
     }
 }
 
+//MAIN
+
 
 
 
@@ -37,35 +39,62 @@
 
 .footer_site{
     background-color: #000000;
-    .site_footer{
+    width: 100%;
+
+    .logo_header {
         display: flex;
-        background-color: black;
-        width: auto;
-        .logo_footer{
-            display: flex;
-            height: 80%;
-        }
-        .menu_footerr{
-            margin-right: 20px;
-        }
-            .option_footer{
-                .item_footer{
-                color: white;
-                margin-right: 5px;
-                font-size: 140%;
-                text-decoration: none;
-                }
-            }
+        height: 50%;
+    }
+    .item_footer{
+        color: white;
+        margin-right: 20px;
+        font-size: 140%;
     }
     .menu_footer .option_footer:hover .item_footer{
         background-color: rgba(12, 206, 5, 0.904);
         border-radius: 5px;
         color: black;
     }
-    .redes_footer{
-        margin-right: 20px;
-    }.navbar-toggler{
+    .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
     }
 }
+
+
+
+
+// .footer_site{
+//     background-color: #000000;
+//     .site_footer{
+//         display: flex;
+//         // background-color: black;
+//         width: auto;
+//         .logo_footer{
+//             display: flex;
+//             height: 80%;
+//         }
+//         .menu_footerr{
+//             margin-right: 20px;
+//         }
+//             .option_footer{
+//                 .item_footer{
+//                 color: white;
+//                 margin-right: 5px;
+//                 font-size: 140%;
+//                 text-decoration: none;
+//                     .menu_footer .option_footer:hover .item_footer{
+//                         background-color: rgba(12, 206, 5, 0.904);
+//                         border-radius: 5px;
+//                         color: black;
+//                     }
+//                     .redes_footer{
+//                         margin-right: 20px;
+//                     }.navbar-toggler{
+//                         background-color: rgb(2 90 2);
+//                         border-color: rgb(2 90 2);
+//                     }
+//                 }
+//             }
+//         }
+//     }
