@@ -4,9 +4,13 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .site_header {
   background-color: #000000;
-  width: auto;
+  width: 100%;
 }
 .site_header .logo_header {
   display: flex;
@@ -83,7 +87,7 @@
 .footer_site .site_footer {
   display: flex;
   background-color: black;
-  width: auto;
+  width: 100%;
 }
 .footer_site .site_footer .logo_footer {
   display: flex;
@@ -114,23 +118,12 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-html {
-  min-width: 100vw;
-}
-
-body {
-  background-color: rgb(255, 255, 255);
-}
-
-section {
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .site_header {
   background-color: #000000;
-  width: auto;
+  width: 100%;
 }
 .site_header .logo_header {
   display: flex;
@@ -138,11 +131,8 @@ section {
 }
 .site_header .item_header {
   color: white;
-}
-.site_header .item_header {
-  margin-right: 5px;
-  font-size: 120%;
-  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 20px;
+  font-size: 140%;
 }
 .site_header .menu_header .option_header:hover .item_header {
   background-color: rgba(12, 206, 5, 0.904);
@@ -154,102 +144,38 @@ section {
   border-color: rgb(2, 90, 2);
 }
 
-/* CARD-MAIN */
-.card {
-  width: 190px;
-  height: 254px;
-  border-radius: 20px;
-  background: #ffffff;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #000000;
-  transition: 0.5s ease-out;
-  overflow: visible;
+.footer_site {
+  background-color: #000000;
 }
-
-.card-details {
-  color: rgb(156, 2, 2);
-  height: 100%;
-  gap: 0.5em;
-  display: grid;
-  place-content: center;
-}
-
-.card-button {
-  transform: translate(-50%, 125%);
-  width: 60%;
-  border-radius: 1rem;
-  border: none;
-  background-color: #007d1d;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  opacity: 0;
-  transition: 0.3s ease-out;
-}
-
-.text-body {
-  color: #000000;
-}
-
-/*Text-CARD-MAIN*/
-.text-tittle {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.904);
-}
-
-/*HOVER-CARD-MAIN*/
-.card:hover {
-  border-color: rgba(12, 206, 5, 0.904);
-  box-shadow: 0 4px 18px 0 rgba(12, 206, 5, 0.904);
-  background-color: rgba(12, 206, 5, 0.904);
-}
-
-.card:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
-}
-
-.card {
-  margin-top: 25px;
-}
-
-.site_footer {
+.footer_site .site_footer {
+  display: flex;
   background-color: black;
   width: auto;
 }
-
-.logo_footer {
+.footer_site .site_footer .logo_footer {
   display: flex;
   height: 80%;
 }
-
-.item_footer {
+.footer_site .site_footer .menu_footerr {
+  margin-right: 20px;
+}
+.footer_site .site_footer .option_footer .item_footer {
   color: white;
-}
-
-.item_footer {
   margin-right: 5px;
-  font-size: 120%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 140%;
+  text-decoration: none;
 }
-
-.menu_footer .option_footer:hover .item_footer {
+.footer_site .menu_footer .option_footer:hover .item_footer {
   background-color: rgba(12, 206, 5, 0.904);
   border-radius: 5px;
   color: black;
 }
-
-.footer_site {
-  background-color: black;
+.footer_site .redes_footer {
+  margin-right: 20px;
 }
-
-.redes_footer {
-  margin-right: 10px;
+.footer_site .navbar-toggler {
+  background-color: rgb(2, 90, 2);
+  border-color: rgb(2, 90, 2);
 }
 
 /*# sourceMappingURL=estilos.css.map */
