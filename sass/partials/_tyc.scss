@@ -37,26 +37,29 @@ body{
 //MAIN
 .container_main{
     color: rgba(255, 255, 255, 0.904);
-    margin: 70px 70px;
+    margin: 20px 20px;
     .p_main{
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 25px;
     }
     .tittle_main{
-        font-size: 60px;
-    }
-    .p_main{
-        font-size: 25px;
+        font-size: 50px;
+        text-align: justify;
     }
     .container_section_main{
-        margin: 50px 50px;
+        margin: 25px 25px;
         .subtittle_main{
             font-size: 50px;
+            color: rgba(12, 206, 5, 0.904);
+            text-align: left;
         }
         .container_tyc{
             .p_tittle{
                 margin-top: 25px;
                 margin-left: 25px;
+                margin-bottom: 15px;
+                color: rgba(12, 206, 5, 0.904);
+                text-decoration:underline solid rgba(26, 224, 0, 0.904);
             }
             .tyc_eventos{
                 border-radius: 20px;
@@ -96,5 +99,50 @@ body{
     .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
+    }
+}
+
+/////////////////////////////////////////////////
+//////////////////////////////////////////////// 
+@media (min-width: 768px){
+    //MAIN
+    .container_main{
+        color: rgba(255, 255, 255, 0.904);
+        margin: 70px 70px;
+        .p_main{
+            font-size: 15px;
+            margin-top: 25px;
+        }
+        .tittle_main{
+            font-size: 60px;
+        }
+        .p_main{
+            font-size: 25px;
+        }
+        .container_section_main{
+            margin: 50px 50px;
+            .subtittle_main{
+                font-size: 50px;
+                color: rgba(255, 255, 255, 0.904);
+            }
+            .container_tyc{
+                .p_tittle{
+                    margin-top: 25px;
+                    margin-left: 25px;
+                    color: rgba(255, 255, 255, 0.904);
+                    text-decoration: none;
+                }
+                .tyc_eventos{
+                    border-radius: 20px;
+                    border: 2px solid rgba(255, 255, 255, 0.904);
+                    padding: 20px;
+                    background-color: rgba(255, 255, 255, 0.904);
+                    color: rgba(0, 0, 0, 0.904);
+                }
+                .tyc_eventos{
+                    margin-left: 60px;
+                }
+            }
+        }
     }
 }

@@ -6,8 +6,6 @@
 html{
     overflow-x: hidden;
 }
-
-
 // HEADER
 .site_header{
     background-color: #000000;
@@ -34,10 +32,10 @@ html{
 }
 
 
-
 // MAIN
 .main_home{
     .tittle_home{
+        background-color: rgba(0, 0, 0, 0.904);
         font-size: 60px;
         text-align: center;
         margin-top: 50px;
@@ -68,24 +66,10 @@ html{
                     margin-top: 50px;
                 }
             }
-            width: fit-content;
         }
         .container_img_home{
-            width: 100vw;
-            max-width: 1000px;
-            min-width: 320px;
-            margin-right: 25px;
-            margin-top: 45px;
-            img{
-                display: flex;
-                width: 100%;
-                border-radius: 20px;
-                box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
-            }
+            display: none;
         }
-        display: flex;
-        
-
     }
 }
 
@@ -111,5 +95,66 @@ html{
     .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
+    }
+}
+
+
+/////////////////////////////////////////////////
+//////////////////////////////////////////////// 
+@media (min-width: 768px){
+
+    // MAIN
+    .main_home{
+        .tittle_home{
+            background-color: rgba(0, 0, 0, 0.904);
+            font-size: 60px;
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(8, 168, 2, 0.904);
+            .admiracion_h1{
+            color: red;
+            }
+        }
+        .div_main{
+            .container_home{
+                .p_main{
+                    font-size: 20px;
+                    text-align: justify;
+                    color:  rgb(255, 255, 255);
+                    margin: 50px 50px;
+                    text-align: justify;
+                    font-size: 20px;
+                }
+                .botton_home{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        border-radius: 20px;
+                        border: 2px solid rgba(12, 206, 5, 0.904);
+                        padding: 30px;
+                        color: rgb(255, 255, 255);
+                        display: inline-block;
+                        margin-top: 50px;
+                    }
+                }
+                width: fit-content;
+            }
+            .container_img_home{
+                display: block;
+                width: 100vw;
+                max-width: 1000px;
+                min-width: 320px;
+                margin-right: 25px;
+                margin-top: 45px;
+                img{
+                    display: flex;
+                    width: 100%;
+                    border-radius: 20px;
+                    box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
+                }
+            }
+            display: flex;
+            
+        }
     }
 }

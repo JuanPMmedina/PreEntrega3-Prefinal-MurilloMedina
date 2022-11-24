@@ -41,17 +41,7 @@ body{
     }
     .qs_container{
         .general_main{
-            width: 100vw;
-            max-width: 1000px;
-            min-width: 320px;
-            margin-right: 25px;
-            margin-top: 25px;
-            img{
-                display: flex;
-                width: 100%;
-                border-radius: 20px;
-                box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
-            }
+            display: none;
         }
         .p_main{
             font-size: 20px;
@@ -70,7 +60,6 @@ body{
                 }
             }
         }
-        display: flex;
     }
 }
 
@@ -99,5 +88,52 @@ body{
     .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
+    }
+}
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+@media (min-width: 768px){
+
+//MAIN
+    .container_main{
+        .tittle_main{
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        .qs_container{
+            .general_main{
+                display: block;
+                width: 100vw;
+                max-width: 1000px;
+                min-width: 320px;
+                margin-right: 25px;
+                margin-top: 25px;
+                img{
+                    display: flex;
+                    width: 100%;
+                    border-radius: 20px;
+                    box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
+                }
+            }
+            .p_main{
+                font-size: 20px;
+                text-align: justify;
+                width: fit-content;
+                .button_contacto{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        border-radius: 20px;
+                        border: 2px solid rgba(12, 206, 5, 0.904);
+                        padding: 30px;
+                        color: rgb(255, 255, 255);
+                        display: inline-block;
+                        margin-top: 50px;
+                    }
+                }
+            }
+            display: flex;
+        }
     }
 }

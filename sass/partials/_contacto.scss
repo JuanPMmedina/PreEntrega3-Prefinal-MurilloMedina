@@ -39,24 +39,13 @@ html{
     .tittle_main{
         font-size: 60px;
         text-align: center;
-        margin-top: 30px;
+        margin:25px 25px ;
         color: rgba(255, 255, 255, 0.904);
     }
     .info_main{
         .general_main{
-                width: 100vw;
-                max-width: 1000px;
-                min-width: 320px;
-                margin-right: 25px;
-                margin-top: 25px;
-                img{
-                    display: flex;
-                    width: 100%;
-                    border-radius: 20px;
-                    box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
-                }
+            display: none;
         }
-        width: fit-content;
         .contacto{
             margin-top: 30px;
             width: 100%;
@@ -69,6 +58,7 @@ html{
                 margin-bottom: 20px;
             }
             .info_contactar{
+                display: flex;
                 width: 100%;
                 padding: 10px;
                 border-radius: 5px;
@@ -76,6 +66,7 @@ html{
                 border: 3px solid rgba(12, 206, 5, 0.904);
             }
             .consulta_info{
+                display: flex;
                 width: 100%;
                 padding: 40px;
                 border-radius: 5px;
@@ -89,7 +80,8 @@ html{
                 }
             }
             .button_contactar{
-                width: 20%;
+                display: flex;
+                width: auto;
                 background-color: rgba(255, 255, 255, 0.904);
                 border: 2px solid rgba(12, 206, 5, 0.904);
                 border-radius: 20px;
@@ -99,8 +91,8 @@ html{
                 background-color: rgba(12, 206, 5, 0.904);
                 border: 2px solid rgba(12, 206, 5, 0.904);
             }
+            width: fit-content;
         }
-        display: flex;
     }
 }
 
@@ -129,5 +121,94 @@ html{
     .navbar-toggler{
         background-color: rgb(2 90 2);
         border-color: rgb(2 90 2);
+    }
+}
+
+
+
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+@media (min-width: 768px){
+//MAIN
+    .container_main{
+        .tittle_main{
+            font-size: 60px;
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.904);
+        }
+        .info_main{
+            .general_main{
+                display: block;
+                width: 100vw;
+                max-width: 1000px;
+                min-width: 320px;
+                margin-right: 25px;
+                margin-top: 25px;
+                img{
+                    display: flex;
+                    width: 100%;
+                    border-radius: 20px;
+                    box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
+                }
+            }
+            width: fit-content;
+            
+            .info_container{
+                display: flex;
+                .contacto{
+                    margin-right: 40px;
+                    margin-top: 30px;
+                    width: 100%;
+                    padding: 20px;
+                    border-radius: 5px;
+                    border: 5px solid rgba(12, 206, 5, 0.904);
+                    .tittle_formu{
+                        display: flex;
+                        font-size: 45px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .form_form{
+                        margin-right: 20px;
+                        width: fit-content;
+                        .info_contactar{
+                            width: 100%;
+                            padding: 10px;
+                            border-radius: 5px;
+                            margin-bottom: 10px;
+                            border: 3px solid rgba(12, 206, 5, 0.904);
+                        }
+                        .consulta_info{
+                            width: 100%;
+                            padding: 40px;
+                            border-radius: 5px;
+                            margin-bottom: 10px;
+                            border: 3px solid rgba(12, 206, 5, 0.904);
+                        }
+                        p{
+                            color: rgba(255, 255, 255, 0.904);
+                            .admiracion_h1{
+                                color: rgba(12, 206, 5, 0.904)
+                            }
+                        }
+                        .button_contactar{
+                            width: 20%;
+                            background-color: rgba(255, 255, 255, 0.904);
+                            border: 2px solid rgba(12, 206, 5, 0.904);
+                            border-radius: 20px;
+                            padding: 20px;                
+                        }
+                        .button_contactar:hover{
+                            background-color: rgba(12, 206, 5, 0.904);
+                            border: 2px solid rgba(12, 206, 5, 0.904);
+                        }
+                    }
+                    
+                }
+            }
+            display: flex;
+        }
     }
 }
