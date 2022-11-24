@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+// HEADER
+.site_header{
+    background-color: #000000;
+    width: 100%;
+
+    .logo_header {
+        display: flex;
+        height: 50%;
+    }
+    .item_header{
+        color: white;
+        margin-right: 20px;
+        font-size: 140%;
+    }
+    .menu_header .option_header:hover .item_header{
+        background-color: rgba(12, 206, 5, 0.904);
+        border-radius: 5px;
+        color: black;
+    }
+    .navbar-toggler{
+        background-color: rgb(2 90 2);
+        border-color: rgb(2 90 2);
+    }
+}
+
+//MAIN
+.container_main{
+    .tittle_main{
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .qs_container{
+        .general_main{
+            width: 100vw;
+            max-width: 1000px;
+            min-width: 320px;
+            margin-right: 25px;
+            margin-top: 25px;
+            img{
+                display: flex;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0px 5px 8px rgba(93, 92, 92, 0.904);
+            }
+        }
+        .p_main{
+            font-size: 20px;
+            text-align: justify;
+            width: fit-content;
+            .button_contacto{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    border-radius: 20px;
+                    border: 2px solid rgba(12, 206, 5, 0.904);
+                    padding: 30px;
+                    color: rgb(255, 255, 255);
+                    display: inline-block;
+                    margin-top: 50px;
+                }
+            }
+        }
+        display: flex;
+    }
+}
+
+
+
+// FOOTER
+
+.footer_site{
+    background-color: #000000;
+    width: 100%;
+
+    .logo_header {
+        display: flex;
+        height: 50%;
+    }
+    .item_footer{
+        color: white;
+        margin-right: 20px;
+        font-size: 140%;
+    }
+    .menu_footer .option_footer:hover .item_footer{
+        background-color: rgba(12, 206, 5, 0.904);
+        border-radius: 5px;
+        color: black;
+    }
+    .navbar-toggler{
+        background-color: rgb(2 90 2);
+        border-color: rgb(2 90 2);
+    }
+}
